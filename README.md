@@ -9,12 +9,11 @@ This is the code and dataset used by **Snoopy**, an attack system for password i
 
 ## Data
 
-Download the data through this [Dropbox link](https://www.microsoft.com/en-us/research/project/rgb-d-dataset-7-scenes/). Unzip the downloaded file in the project directory and check the following subfolders: 
+Download the data through this [Dropbox link](https://www.dropbox.com/s/288hotqkig7e3w9/dataset.zip?dl=0). Unzip the downloaded file in the project directory and check the following subfolders: 
 
-1. `train`: containing more than 33,000 labelled motion samples used for training the inference model.
-2. `testing`: containing more than 2,500 labelled motion samples for cross-user testing.
-3. `cross-pwd_testing`: containing more than 1,500 labelled motion samples for testing, including some passwords out of the training set.
-
+1. `train`: > 33,000 labelled motion samples from 147 common swiped pattern locks. Used for network training.
+2. `test`: > 1,500 samples, containing both seen (50) and unseen (64) pattern locks during training.
+3. `val`: > 3,800 labelled motion samples from 61 pattern locks for model selection.
 
 ## Dependency
 
@@ -24,21 +23,29 @@ Our code has been tesed on `Keras 2.0.8` with `tensorflow-gpu==1.9.0` as backend
 2. Install the specific `recurrentshop` inside this repository by running `cd recurrentshop` and `python setup.py install`.
 3. Go to this [fork](https://github.com/farizrahman4u/seq2seq) and follow its instruction to install `seq2seq`. 
 
-## Train
+## Run the code
 
-- Change the config inside `config.ini`
+- *FIRST*: Change the config file `config.ini` to decide network params and regularization strategies.
 
 - To train the attention based lstm model:
 
-`python train_att_seq.py`
+```
+python train_att_seq.py
+```
 
 - To train the standard lstm model:
 
-`python train_seq.py`
+```
+python train_seq.py
+```
 
 - To test the model:
 
-`python test.py *model_name*.hdf5
+```
+python test.py *model_name*.hdf5
+```
+
+For example, `python test.py model_attention_32_0.005_200_33336_0.1_2.hdf5`. There are some pre-baked model examples docked in the `model` directory.
 
 ## Citation
 
