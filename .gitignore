@@ -1,0 +1,12 @@
+dataset/*
+tmp/*
+history/*
+results/*
+recurrentshop/*
+
+*txt
+*pyc
+.idea/*
+
+new_pwds.py
+rename.py
