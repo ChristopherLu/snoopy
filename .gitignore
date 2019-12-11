@@ -2,7 +2,6 @@ dataset/*
 tmp/*
 history/*
 results/*
-recurrentshop/*
 
 *txt
 *pyc

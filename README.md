@@ -1,5 +1,5 @@
 [![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
-![Python 2.7](https://img.shields.io/badge/python-3.6-green.svg)
+![Python 2.7](https://img.shields.io/badge/python-2.7-green.svg)
 
 # [Snoopy: Sniffing Your Smartwatch Passwords via Deep Sequence Learning](https://christopherlu.github.io/files/papers/[UbiComp2018]Snoopy.pdf) - ACM UbiComp 2018.
 
@@ -20,7 +20,7 @@ Download the data through this [Dropbox link](https://www.dropbox.com/s/288hotqk
 Our code has been tesed on `Keras 2.0.8` with `tensorflow-gpu==1.9.0` as backend. Install required dependency as per the following setps.
 
 1. Create the `py27snoopy` Conda environment: `conda env create -f environment.yaml`.
-2. Install the specific `recurrentshop` inside this repository by running `cd recurrentshop` and `python setup.py install`.
+2. Install the specific version of `recurrentshop` from this [fork](https://github.com/ChristopherLu/recurrentshop_bak)
 3. Go to this [fork](https://github.com/farizrahman4u/seq2seq) and follow its instruction to install `seq2seq`. 
 
 ## Run the code
@@ -64,3 +64,5 @@ If you find this repository and our data useful, please cite our paper
 }
 ```
 
+## Acknowledgements
+This code partially builds on [Seq2Seq](https://github.com/farizrahman4u/seq2seq).
