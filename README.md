@@ -1,7 +1,7 @@
 [![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 ![Python 2.7](https://img.shields.io/badge/python-2.7-green.svg)
 
-# [Snoopy: Sniffing Your Smartwatch Passwords via Deep Sequence Learning](https://christopherlu.github.io/files/papers/[UbiComp2018]Snoopy.pdf) - ACM UbiComp 2018.
+# [Snoopy: Sniffing Your Smartwatch Passwords via Deep Sequence Learning](https://arxiv.org/pdf/1912.04836.pdf) - ACM UbiComp 2018.
 
 ## Introduction 
 
